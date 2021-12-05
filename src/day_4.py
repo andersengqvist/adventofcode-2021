@@ -88,9 +88,9 @@ def build_bingo_board(the_string):
 
 
 def build_game(the_string):
-    apa = the_string.split(os.linesep + os.linesep)
-    numbers = [int(num.strip()) for num in apa[0].split(",")]
-    boards = [build_bingo_board(board) for board in apa[1:]]
+    chunks = the_string.split(os.linesep + os.linesep)
+    numbers = [int(num.strip()) for num in chunks[0].split(",")]
+    boards = [build_bingo_board(board) for board in chunks[1:]]
     return numbers, boards
 
 

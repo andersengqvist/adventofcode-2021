@@ -87,7 +87,7 @@ def get_overlap_part_1(lines):
 
 def get_overlap_part_2(lines):
     parsed_coordinates = [parse_points(line) for line in lines if line.strip()]
-    lines = [build_line(tup[0], tup[1], tup[2], tup[3]) for tup in parsed_coordinates ]
+    lines = [build_line(tup[0], tup[1], tup[2], tup[3]) for tup in parsed_coordinates]
     return count_overlapping(lines)
 
 
