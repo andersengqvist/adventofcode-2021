@@ -56,14 +56,13 @@ def gen(n1, n2):
         while num <= n2:
             yield num
             num += 1
+    elif n1 > n2:
+        while num >= n2:
+            yield num
+            num -= 1
     else:
-        if n1 > n2:
-            while num >= n2:
-                yield num
-                num -= 1
-        else:
-            while True:
-                yield num
+        while True:
+            yield num
 
 
 def build_line(x1, y1, x2, y2):
