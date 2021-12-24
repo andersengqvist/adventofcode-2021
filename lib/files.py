@@ -9,6 +9,16 @@ def read_lines(the_file):
         return [line.strip() for line in fp.readlines()]
 
 
+def read_lines_unstripped(the_file):
+    """
+    Read file lines into list of strings, without removing whitespace
+    :param the_file: the file to read
+    :return: list of strings of the file lines
+    """
+    with open(the_file) as fp:
+        return [line for line in fp.readlines()]
+
+
 def read_file(the_file):
     """
     Read entire file into a string
