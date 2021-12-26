@@ -1,0 +1,35 @@
+inp w
+br1 14 _ # z = z * 26 + w + 14
+inp w
+br1 6 _ # z = z * 26 + w + 6
+inp w
+br1 6 _ # z = z * 26 + w + 6
+inp w
+br1 13 _ # z = z * 26 + w + 13
+inp w
+br2 -12 _ # x = 1 if (z % 26) + -12 != w else 0 <= x must be 0
+br3 _ _ # z = z / 26
+inp w
+br1 8 _ # z = z * 26 + w + 8
+inp w
+br2 -15 _ # x = 1 if (z % 26) + -15 != w else 0 <= x must be 0
+br3 _ _ # z = z / 26
+inp w
+br1 10 _ # z = z * 26 + w + 10
+inp w
+br1 8 _ # z = z * 26 + w + 8
+inp w
+br2 -13 _ # x = 1 if (z % 26) + -13 != w else 0
+br3 _ _ # z = z / 26
+inp w
+br2 -13 _ # x = 1 if (z % 26) + -13 != w else 0
+br3 _ _ # z = z / 26
+inp w
+br2 -14 _ # x = 1 if (z % 26) + -14 != w else 0
+br3 _ _ # z = z / 26
+inp w
+br2 -2 _ # x = 1 if (z % 26) + -12 != w else 0
+br3 _ _ # z = z / 26
+inp w
+br2 -9 _ # x = 1 if (z % 26) + -9 != w else 0
+br3 _ _ # z = z / 26

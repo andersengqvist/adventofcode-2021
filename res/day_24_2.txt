@@ -1,0 +1,42 @@
+inp w
+sp4 11 _ # x = 1 if (z % 26) + 11 != w else 0
+sp3 1 14 # z = z * (25 * x + 1) + x * (w + 14)
+inp w
+sp4 14 _ # x = 1 if (z % 26) + 14 != w else 0
+sp3 1 6 # z = z * (25 * x + 1) + x * (w + 6)
+inp w
+sp4 15 _ # x = 1 if (z % 26) + 15 != w else 0
+sp3 1 6 # z = z * (25 * x + 1) + x * (w + 6)
+inp w
+sp4 13 _ # x = 1 if (z % 26) + 13 != w else 0
+sp3 1 13 # z = z * (25 * x + 1) + x * (w + 13)
+inp w
+sp4 -12 _ # x = 1 if (z % 26) + -12 != w else 0
+sp3 26 8 # z = (z / 26) * (25 * x + 1) + x * (w + 8)
+inp w
+sp4 10 _ # x = 1 if (z % 26) + 10 != w else 0
+sp3 1 8 # z = z * (25 * x + 1) + x * (w + 8)
+inp w
+sp4 -15 _ # x = 1 if (z % 26) + -15 != w else 0
+sp3 26 7 # z = (z / 26) * (25 * x + 1) + x * (w + 7)
+inp w
+sp4 13 _ # x = 1 if (z % 26) + 13 != w else 0
+sp3 1 10 # z = z * (25 * x + 1) + x * (w + 10)
+inp w
+sp4 10 _ # x = 1 if (z % 26) + 10 != w else 0
+sp3 1 8 # z = z * (25 * x + 1) + x * (w + 8)
+inp w
+sp4 -13 _ # x = 1 if (z % 26) + -13 != w else 0
+sp3 26 10 # z = (z / 26) * (25 * x + 1) + x * (w + 10)
+inp w
+sp4 -13 _ # x = 1 if (z % 26) + -13 != w else 0
+sp3 26 10 # z = (z / 26) * (25 * x + 1) + x * (w + 10)
+inp w
+sp4 -14 _ # x = 1 if (z % 26) + -14 != w else 0
+sp3 26 8 # z = (z / 26) * (25 * x + 1) + x * (w + 8)
+inp w
+sp4 -2 _ # x = 1 if (z % 26) + -12 != w else 0
+sp3 26 8 # z = (z / 26) * (25 * x + 1) + x * (w + 8)
+inp w
+sp4 -9 _ # x = 1 if (z % 26) + -9 != w else 0
+sp3 26 7 # z = (z / 26) * (25 * x + 1) + x * (w + 7)
