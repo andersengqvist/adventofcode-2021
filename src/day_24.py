@@ -19,6 +19,33 @@ import math
 # So created the AluBreaker for this new set of instructions and set it to work.
 # Took some time, but eventually it gave an answer.
 # There probably are some more clever stuff that can be done to limit the search space, but I cannot see anything.
+#
+# ... wait ..., there is a relation between them:
+# The first digit read into w (w0) has a relation with the last digit (w13):
+# First z is set to w0 + 14, and that is the value we will have on the last modulo when we have read w13 into w
+# So (z % 26) = w0 + 14
+# And w0 + 14 - 9 (w0 + 5) must equal to w13
+# And because both w0 and w13 is between 1 and 9, w0 must be at least 1 and at most 5,
+# w13 is at least 1 + 5 = 6 and at most 4 + 5 = 9
+#
+# By doing this for all w0-w13 we have a lower and upper bound of all the digits in the model number,
+# and also the solution to the two questions!
+# To find the highest number just take the upper bound on each digit, and to find the lowest then take the lower bound:
+# w0  = [1 4]
+# w1  = [1 5]
+# w2  = [9 9]
+# w3  = [1 8]
+# w4  = [2 9]
+# w5  = [8 9]
+# w6  = [1 2]
+# w7  = [4 9]
+# w8  = [6 9]
+# w9  = [1 4]
+# w10 = [1 6]
+# w11 = [1 1]
+# w12 = [5 9]
+# w13 = [6 9]
+
 def part1():
     # the_input1 = read_lines("res/day_24_1.txt")
     # program1 = parse_program(the_input1)
